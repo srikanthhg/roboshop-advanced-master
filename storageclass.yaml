@@ -8,4 +8,5 @@ volumeBindingMode: WaitForFirstConsumer
 parameters:
   type: gp2
 
-  # ec2 full access for cluster
+  # ec2 full access
+  #  for cluster

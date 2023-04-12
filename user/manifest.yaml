@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: user-config
+  name: user-config1
 data:
   REDIS_HOST: "redis"
   MONGO_URL: "mongodb://mongodb:27017/catalogue"
@@ -33,7 +33,7 @@ spec:
         image: techworldwithsiva/user:v1
         envFrom:
         - configMapRef:
-            name: user-config
+            name: user-config1
         ports:
         - containerPort: 8080
 ---
